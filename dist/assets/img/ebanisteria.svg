@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Trabajo de ebanistería</title><desc id="d">Ilustración de una mesa de madera artesanal y herramientas en el taller.</desc>
+  <rect width="900" height="620" fill="#eee2ca"/><path d="M0 0h900v420H0z" fill="#d2b58b"/>
+  <path d="M0 90h900M0 165h900M0 240h900M0 315h900" stroke="#b48d62" stroke-width="8" opacity=".55"/>
+  <rect y="421" width="900" height="199" fill="#74604d"/>
+  <path d="M177 271h550v66H177z" fill="#9c613b"/><path d="m213 337 56 0-23 213h-56zm423 0h56l23 213h-56z" fill="#76442e"/>
+  <path d="M204 292h493M216 313h474" stroke="#d19a61" stroke-width="5" opacity=".75"/>
+  <path d="m104 184 167-86 23 43-167 87z" fill="#555b50"/><path d="m104 184 167-86 8 15-167 86z" fill="#d9d0bc"/>
+  <circle cx="728" cy="154" r="55" fill="#d6a64f"/><path d="M728 126v56m-28-28h56m-48-20 40 40m0-40-40 40" stroke="#fff1ce" stroke-width="5"/>
+</svg>

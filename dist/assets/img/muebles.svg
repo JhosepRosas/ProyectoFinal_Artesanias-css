@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Mueblería rústica</title><desc id="d">Ilustración de un sillón y una mesa lateral construidos en madera.</desc>
+  <rect width="900" height="620" fill="#e9ddc7"/><path d="M0 420h900v200H0z" fill="#9b8060"/>
+  <path d="M90 110h720v310H90z" fill="#d4c09c"/><path d="M90 110h720v35H90z" fill="#b7986a"/>
+  <path d="M181 343h351v82H181z" fill="#91603e"/><path d="M198 238h318v115H198z" rx="35" fill="#a56c43"/>
+  <path d="M164 208h73v184h-73zm320 0h73v184h-73z" fill="#784c32"/>
+  <path d="M205 424h30l-14 112h-31zm275 0h30l16 112h-31z" fill="#68452f"/>
+  <rect x="602" y="320" width="129" height="28" rx="8" fill="#9c613b"/><path d="M616 348h18l-7 130h-19zm84 0h18l10 130h-19z" fill="#76442e"/>
+  <path d="M602 306c0-20 18-34 34-34s33 14 33 34" fill="none" stroke="#a84d35" stroke-width="8"/>
+  <circle cx="721" cy="193" r="47" fill="#d6a64f"/><path d="M721 161v65m-31-32h63" stroke="#fff1ce" stroke-width="5"/>
+</svg>

@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins" as mix;
+
+.craft-note {
+  @include mix.panel(#f0e5d4, mix.spacing(3));
+  border-left: 4px solid vars.$sun;
+}
+
+.craft-badge {
+  display: inline-block;
+  padding: mix.spacing(0.6) mix.spacing(1.3);
+  color: vars.$clay-dark;
+  background: color.adjust(vars.$clay, $lightness: 43%);
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.craft-link {
+  color: vars.$clay-dark;
+  font-weight: 700;
+  @include mix.focus-ring;
+  &:hover { color: vars.$clay; }
+}
+
+.craft-quote {
+  @include mix.panel(#fffdf9, mix.spacing(3));
+  border-top: 3px solid vars.$clay;
+  font-family: Georgia, serif;
+  font-size: 1.12rem;
+}

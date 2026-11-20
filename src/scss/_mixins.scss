@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "variables" as vars;
+
+@mixin panel($background: #fffdf9, $padding: 1.35rem) {
+  padding: $padding;
+  background: $background;
+  border: 1px solid color.adjust(vars.$paper, $lightness: -8%);
+  border-radius: vars.$radius;
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 3px solid vars.$sun;
+    outline-offset: 3px;
+  }
+}
+
+@function spacing($multiplier) {
+  @return $multiplier * 0.5rem;
+}

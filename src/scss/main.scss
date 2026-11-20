@@ -1,0 +1,23 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins" as mix;
+@use "components";
+
+.section-sass {
+  padding-block: mix.spacing(8);
+  background: color.mix(vars.$paper, #fff, $weight: 65%);
+  .section-heading {
+    max-width: 48rem;
+    margin-bottom: mix.spacing(4);
+  }
+}
+
+.artisan-profile {
+  @include mix.panel();
+  transition: transform .2s ease, box-shadow .2s ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem color.change(vars.$ink, $alpha: .1);
+  }
+  img { border-radius: vars.$radius; }
+}

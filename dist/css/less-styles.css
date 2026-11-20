@@ -1,0 +1,73 @@
+.theme-clay {
+  color: #793724;
+}
+.theme-sage {
+  color: #66745a;
+}
+.ceramic-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #793724;
+  font-weight: 700;
+}
+.ceramic-mark::before {
+  content: "";
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50% 50% 45% 45%;
+  background: #a84d35;
+  box-shadow: 0.48rem 0.08rem 0 -2px #d6a64f;
+}
+.artisan-card {
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+}
+.artisan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(41, 39, 31, 0.15);
+}
+.artisan-card .badge {
+  background: #eeddbd;
+}
+.process-list {
+  counter-reset: workshop-step;
+  list-style: none;
+  padding: 0;
+}
+.process-list li {
+  position: relative;
+  min-height: 3rem;
+  padding: 0.35rem 0 1.1rem 3.6rem;
+  border-left: 1px solid #dca090;
+}
+.process-list li::before {
+  counter-increment: workshop-step;
+  content: counter(workshop-step, decimal-leading-zero);
+  position: absolute;
+  left: -0.05rem;
+  top: 0;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
+  background: #a84d35;
+  font-weight: 700;
+}
+.process-list li:last-child {
+  border-left-color: transparent;
+}
+.testimonial {
+  padding: 1.35rem;
+  background: #fbf8f3;
+  border: 1px solid #eee5d2;
+  border-radius: 1.15rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(41, 39, 31, 0.05);
+}
+.testimonial cite {
+  color: #793724;
+  font-style: normal;
+  font-weight: 700;
+}

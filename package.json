@@ -1,0 +1,25 @@
+{
+  "name": "taller-andino-sur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio multipágina para Taller Andino Sur, proyecto académico UTP.",
+  "scripts": {
+    "build": "npm run build:css && node tools/build-site.mjs",
+    "build:css": "npm run build:base && npm run build:less && npm run build:sass && npm run build:tailwind",
+    "build:base": "mkdir -p dist/css && cp src/css/base.css dist/css/base.css",
+    "build:less": "lessc src/less/main.less dist/css/less-styles.css",
+    "build:sass": "sass --no-source-map src/scss/main.scss dist/css/sass-styles.css",
+    "build:tailwind": "tailwindcss -i src/input.css -o dist/css/tailwind.css --minify",
+    "watch": "npm run watch:less & npm run watch:sass & npm run watch:tailwind & wait",
+    "watch:less": "lessc --watch src/less/main.less dist/css/less-styles.css",
+    "watch:sass": "sass --watch --no-source-map src/scss/main.scss:dist/css/sass-styles.css",
+    "watch:tailwind": "tailwindcss -i src/input.css -o dist/css/tailwind.css --watch",
+    "dev": "npm run build && npx serve dist"
+  },
+  "devDependencies": {
+    "less": "^4.2.2",
+    "sass": "^1.83.0",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.17"
+  }
+}

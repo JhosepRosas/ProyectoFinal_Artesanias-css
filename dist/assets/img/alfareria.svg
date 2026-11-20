@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Vasija de barro artesanal</title><desc id="d">Ilustración cálida de una vasija sobre una mesa de taller con montañas al fondo.</desc>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f2d8ab"/><stop offset="1" stop-color="#e8b17c"/></linearGradient><linearGradient id="pot" x2="1"><stop stop-color="#9b4935"/><stop offset=".5" stop-color="#c56e49"/><stop offset="1" stop-color="#7a3928"/></linearGradient></defs>
+  <rect width="900" height="620" fill="url(#sky)"/><circle cx="719" cy="112" r="51" fill="#fff0bd"/>
+  <path d="M0 335 190 190l123 105 145-177 215 214 126-108 101 89v206H0z" fill="#75816a"/>
+  <path d="m0 390 208-129 121 113 148-137 168 160 145-116 110 86v223H0z" fill="#a5a485"/>
+  <rect y="435" width="900" height="185" fill="#83664c"/><ellipse cx="451" cy="471" rx="225" ry="31" fill="#654b39"/>
+  <path d="M383 190h136l-13 68c53 42 79 120 77 191-1 48-40 72-132 72s-131-24-132-72c-2-71 24-149 77-191z" fill="url(#pot)"/>
+  <path d="M383 190h136v30H383z" fill="#833c2d"/><path d="M372 329c51 21 104 22 158 0M353 397c72 26 145 26 218 0" fill="none" stroke="#e6aa77" stroke-width="8" opacity=".8"/>
+  <path d="M401 246h100M385 276h132" stroke="#f0c797" stroke-width="4" opacity=".7"/>
+</svg>

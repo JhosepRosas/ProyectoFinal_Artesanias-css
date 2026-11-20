@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Hilados y tejidos</title><desc id="d">Ilustración de un tejido geométrico con ovillos de lana y telar.</desc>
+  <rect width="900" height="620" fill="#eee4d3"/><rect x="95" y="70" width="710" height="440" rx="24" fill="#715b48"/>
+  <rect x="128" y="104" width="644" height="376" fill="#e4c998"/>
+  <path d="M157 111v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361m36-361v361" stroke="#a84d35" stroke-width="6" opacity=".75"/>
+  <path d="M130 160h640m-640 58h640m-640 58h640m-640 58h640m-640 58h640m-640 58h640" stroke="#526653" stroke-width="18"/>
+  <path d="m130 247 80-29 80 29 80-29 80 29 80-29 80 29 80-29 80 29" fill="none" stroke="#f3d9aa" stroke-width="8"/>
+  <circle cx="182" cy="548" r="46" fill="#bb6348"/><path d="M145 548c20-33 53-34 75-1m-68 19c23-24 42-24 66-1" fill="none" stroke="#f4d7b1" stroke-width="5"/>
+  <circle cx="270" cy="548" r="42" fill="#60735d"/><path d="M235 542c23-20 48-19 69 5m-61 18c20-25 43-26 64-5" fill="none" stroke="#e9d8b8" stroke-width="5"/>
+  <path d="M555 535h205" stroke="#d6a64f" stroke-width="10" stroke-linecap="round"/>
+</svg>

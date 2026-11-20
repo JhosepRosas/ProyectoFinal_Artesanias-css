@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Cerámica esmaltada</title><desc id="d">Ilustración de una taza artesanal con motivos geométricos y hojas.</desc>
+  <rect width="900" height="620" fill="#e9ddc9"/><path d="M0 436h900v184H0z" fill="#98795d"/>
+  <path d="M0 0h900v245L0 366z" fill="#d5b58d"/><path d="m85 0 312 0L71 305 0 318V97z" fill="#a5a485"/>
+  <ellipse cx="430" cy="471" rx="195" ry="28" fill="#6d5743"/>
+  <path d="M296 230h267l-18 205c-4 49-46 78-116 78s-112-29-116-78z" fill="#f3eee1"/>
+  <path d="M563 270h42c96 0 92 139-8 145h-45" fill="none" stroke="#f3eee1" stroke-width="31"/>
+  <path d="M307 311h246l-5 57H312z" fill="#547063"/><path d="M317 379h231l-6 44H322z" fill="#b3593f"/>
+  <path d="m359 325 22 25-22 25-22-25zm68 0 22 25-22 25-22-25zm68 0 22 25-22 25-22-25z" fill="#f4d18c"/>
+  <path d="M388 454c24-24 64-24 88 0" fill="none" stroke="#a84d35" stroke-width="7" stroke-linecap="round"/>
+</svg>
