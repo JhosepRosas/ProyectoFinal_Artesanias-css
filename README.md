@@ -13,6 +13,8 @@ Sitio web multipágina de muestra para el curso **Hojas de Estilo en Cascada Ava
 - `tools/build-pages.mjs`: genera las páginas HTML desde una fuente común para mantener navegación y estructura coherentes.
 - `dist/`: salida compilada para publicación; se crea con el build.
 
+Los nombres de las variables propias en CSS, LESS y SCSS están en español para facilitar su identificación (`--color-arcilla`, `@color-papel`, `$radio-borde`). Cada hoja fuente incluye comentarios breves que indican qué tecnología y recursos utiliza. Las clases y directivas propias de Tailwind conservan su sintaxis oficial.
+
 ## Requisitos
 
 Node.js 18 o posterior y npm. La tipografía se carga desde Google Fonts; el resto de la interfaz, las ilustraciones y el audio/video de muestra son locales. Los mapas requieren conexión a internet.

@@ -1,32 +1,33 @@
+/* SCSS: componentes temáticos que pueden reutilizar las páginas. */
 @use "sass:color";
-@use "variables" as vars;
-@use "mixins" as mix;
+@use "variables" as paleta;
+@use "mixins" as utilidades;
 
-.craft-note {
-  @include mix.panel(#f0e5d4, mix.spacing(3));
-  border-left: 4px solid vars.$sun;
+.nota-artesanal {
+  @include utilidades.panel(#f0e5d4, utilidades.espaciado(3));
+  border-left: 4px solid paleta.$color-sol;
 }
 
-.craft-badge {
+.insignia-artesanal {
   display: inline-block;
-  padding: mix.spacing(0.6) mix.spacing(1.3);
-  color: vars.$clay-dark;
-  background: color.adjust(vars.$clay, $lightness: 43%);
+  padding: utilidades.espaciado(0.6) utilidades.espaciado(1.3);
+  color: paleta.$color-arcilla-oscura;
+  background: color.adjust(paleta.$color-arcilla, $lightness: 43%);
   border-radius: 999px;
   font-size: .8rem;
   font-weight: 700;
 }
 
-.craft-link {
-  color: vars.$clay-dark;
+.enlace-artesanal {
+  color: paleta.$color-arcilla-oscura;
   font-weight: 700;
-  @include mix.focus-ring;
-  &:hover { color: vars.$clay; }
+  @include utilidades.anillo-enfoque;
+  &:hover { color: paleta.$color-arcilla; }
 }
 
-.craft-quote {
-  @include mix.panel(#fffdf9, mix.spacing(3));
-  border-top: 3px solid vars.$clay;
+.cita-artesanal {
+  @include utilidades.panel(#fffdf9, utilidades.espaciado(3));
+  border-top: 3px solid paleta.$color-arcilla;
   font-family: Georgia, serif;
   font-size: 1.12rem;
 }

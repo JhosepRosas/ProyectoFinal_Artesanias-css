@@ -1,23 +1,24 @@
+/* SCSS: entrada principal del preprocesador y estilos de composición. */
 @use "sass:color";
-@use "variables" as vars;
-@use "mixins" as mix;
+@use "variables" as paleta;
+@use "mixins" as utilidades;
 @use "components";
 
-.section-sass {
-  padding-block: mix.spacing(8);
-  background: color.mix(vars.$paper, #fff, $weight: 65%);
+.seccion-sass {
+  padding-block: utilidades.espaciado(8);
+  background: color.mix(paleta.$color-papel, #fff, $weight: 65%);
   .section-heading {
     max-width: 48rem;
-    margin-bottom: mix.spacing(4);
+    margin-bottom: utilidades.espaciado(4);
   }
 }
 
-.artisan-profile {
-  @include mix.panel();
+.perfil-artesano {
+  @include utilidades.panel();
   transition: transform .2s ease, box-shadow .2s ease;
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem color.change(vars.$ink, $alpha: .1);
+    box-shadow: 0 1rem 2rem color.change(paleta.$color-tinta, $alpha: .1);
   }
-  img { border-radius: vars.$radius; }
+  img { border-radius: paleta.$radio-borde; }
 }

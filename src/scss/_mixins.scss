@@ -1,20 +1,22 @@
+/* SCSS: mixins reutilizables para paneles y accesibilidad. */
 @use "sass:color";
-@use "variables" as vars;
+@use "variables" as paleta;
 
-@mixin panel($background: #fffdf9, $padding: 1.35rem) {
-  padding: $padding;
-  background: $background;
-  border: 1px solid color.adjust(vars.$paper, $lightness: -8%);
-  border-radius: vars.$radius;
+@mixin panel($fondo: #fffdf9, $relleno: 1.35rem) {
+  padding: $relleno;
+  background: $fondo;
+  border: 1px solid color.adjust(paleta.$color-papel, $lightness: -8%);
+  border-radius: paleta.$radio-borde;
 }
 
-@mixin focus-ring {
+@mixin anillo-enfoque {
   &:focus-visible {
-    outline: 3px solid vars.$sun;
+    outline: 3px solid paleta.$color-sol;
     outline-offset: 3px;
   }
 }
 
-@function spacing($multiplier) {
-  @return $multiplier * 0.5rem;
+/* Función SCSS: convierte una cantidad en pasos de medio rem. */
+@function espaciado($multiplicador) {
+  @return $multiplicador * 0.5rem;
 }

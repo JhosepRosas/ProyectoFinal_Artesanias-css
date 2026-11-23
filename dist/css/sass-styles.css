@@ -1,4 +1,10 @@
-.craft-note {
+@charset "UTF-8";
+/* SCSS: entrada principal del preprocesador y estilos de composición. */
+/* SCSS: variables globales de color y medidas del diseño. */
+/* SCSS: mixins reutilizables para paneles y accesibilidad. */
+/* Función SCSS: convierte una cantidad en pasos de medio rem. */
+/* SCSS: componentes temáticos que pueden reutilizar las páginas. */
+.nota-artesanal {
   padding: 1.5rem;
   background: #f0e5d4;
   border: 1px solid rgb(92.9472096531%, 88.9170437406%, 80.8567119155%);
@@ -6,7 +12,7 @@
   border-left: 4px solid #d6a64f;
 }
 
-.craft-badge {
+.insignia-artesanal {
   display: inline-block;
   padding: 0.3rem 0.65rem;
   color: #793724;
@@ -16,19 +22,19 @@
   font-weight: 700;
 }
 
-.craft-link {
+.enlace-artesanal {
   color: #793724;
   font-weight: 700;
 }
-.craft-link:focus-visible {
+.enlace-artesanal:focus-visible {
   outline: 3px solid #d6a64f;
   outline-offset: 3px;
 }
-.craft-link:hover {
+.enlace-artesanal:hover {
   color: #a84d35;
 }
 
-.craft-quote {
+.cita-artesanal {
   padding: 1.5rem;
   background: #fffdf9;
   border: 1px solid rgb(92.9472096531%, 88.9170437406%, 80.8567119155%);
@@ -38,26 +44,26 @@
   font-size: 1.12rem;
 }
 
-.section-sass {
+.seccion-sass {
   padding-block: 4rem;
   background: rgb(98.2156862745%, 97.1960784314%, 95.1568627451%);
 }
-.section-sass .section-heading {
+.seccion-sass .section-heading {
   max-width: 48rem;
   margin-bottom: 2rem;
 }
 
-.artisan-profile {
+.perfil-artesano {
   padding: 1.35rem;
   background: #fffdf9;
   border: 1px solid rgb(92.9472096531%, 88.9170437406%, 80.8567119155%);
   border-radius: 1.15rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.artisan-profile:hover {
+.perfil-artesano:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(41, 39, 31, 0.1);
 }
-.artisan-profile img {
+.perfil-artesano img {
   border-radius: 1.15rem;
 }

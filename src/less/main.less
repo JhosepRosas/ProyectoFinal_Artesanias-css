@@ -1,52 +1,56 @@
-@clay: #a84d35;
-@clay-deep: #793724;
-@sun: #d6a64f;
-@paper: #f8f4ec;
-@ink: #29271f;
-@radius: 1.15rem;
+/* LESS: variables, anidación, operaciones de color y estilos temáticos. */
 
-.theme {
-  &-clay { color: @clay-deep; }
-  &-sage { color: #66745a; }
+/* Variables de LESS: paleta, texto y forma de los componentes. */
+@color-arcilla: #a84d35;
+@color-arcilla-oscura: #793724;
+@color-salvia: #66745a;
+@color-sol: #d6a64f;
+@color-papel: #f8f4ec;
+@color-tinta: #29271f;
+@radio-borde: 1.15rem;
+
+.tema {
+  &-arcilla { color: @color-arcilla-oscura; }
+  &-salvia { color: @color-salvia; }
 }
 
-.ceramic-mark {
+.marca-ceramica {
   display: inline-flex;
   align-items: center;
   gap: .55rem;
-  color: @clay-deep;
+  color: @color-arcilla-oscura;
   font-weight: 700;
   &::before {
     content: "";
     width: .72rem;
     height: .72rem;
     border-radius: 50% 50% 45% 45%;
-    background: @clay;
-    box-shadow: .48rem .08rem 0 -2px @sun;
+    background: @color-arcilla;
+    box-shadow: .48rem .08rem 0 -2px @color-sol;
   }
 }
 
-.artisan-card {
+.tarjeta-artesanal {
   transition: box-shadow .22s ease, transform .22s ease;
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 32px fade(@ink, 15%);
+    box-shadow: 0 16px 32px fade(@color-tinta, 15%);
   }
-  .badge { background: mix(@paper, @sun, 70%); }
+  .badge { background: mix(@color-papel, @color-sol, 70%); }
 }
 
-.process-list {
-  counter-reset: workshop-step;
+.lista-proceso {
+  counter-reset: paso-taller;
   list-style: none;
   padding: 0;
   li {
     position: relative;
     min-height: 3rem;
     padding: .35rem 0 1.1rem 3.6rem;
-    border-left: 1px solid lighten(@clay, 28%);
+    border-left: 1px solid lighten(@color-arcilla, 28%);
     &::before {
-      counter-increment: workshop-step;
-      content: counter(workshop-step, decimal-leading-zero);
+      counter-increment: paso-taller;
+      content: counter(paso-taller, decimal-leading-zero);
       position: absolute;
       left: -.05rem;
       top: 0;
@@ -57,18 +61,18 @@
       height: 2.5rem;
       border-radius: 50%;
       color: white;
-      background: @clay;
+      background: @color-arcilla;
       font-weight: 700;
     }
     &:last-child { border-left-color: transparent; }
   }
 }
 
-.testimonial {
+.testimonio {
   padding: 1.35rem;
-  background: lighten(@paper, 2%);
-  border: 1px solid darken(@paper, 7%);
-  border-radius: @radius;
-  box-shadow: 0 .5rem 1.5rem fade(@ink, 5%);
-  cite { color: @clay-deep; font-style: normal; font-weight: 700; }
+  background: lighten(@color-papel, 2%);
+  border: 1px solid darken(@color-papel, 7%);
+  border-radius: @radio-borde;
+  box-shadow: 0 .5rem 1.5rem fade(@color-tinta, 5%);
+  cite { color: @color-arcilla-oscura; font-style: normal; font-weight: 700; }
 }
