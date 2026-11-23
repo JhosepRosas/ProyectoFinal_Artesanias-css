@@ -7,7 +7,7 @@
 .seccion-sass {
   padding-block: utilidades.espaciado(8);
   background: color.mix(paleta.$color-papel, #fff, $weight: 65%);
-  .section-heading {
+  .encabezado-seccion {
     max-width: 48rem;
     margin-bottom: utilidades.espaciado(4);
   }

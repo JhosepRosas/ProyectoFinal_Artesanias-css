@@ -32,12 +32,69 @@ const productCards = [
   ["ebanisteria.svg", "Detalle de trabajo en madera", "Ebanistería", "Objetos y muebles construidos con atención al detalle.", "ebanisteria.html"]
 ];
 
+const nombresDeClases = {
+  "skip-link": "enlace-saltar",
+  "site-header": "encabezado-sitio",
+  "header-inner": "contenido-encabezado",
+  brand: "marca",
+  "site-nav": "menu-navegacion",
+  container: "contenedor",
+  hero: "portada",
+  "hero-grid": "rejilla-portada",
+  "hero-media": "imagen-portada",
+  eyebrow: "antetitulo",
+  "page-hero": "portada-pagina",
+  section: "seccion",
+  "section-tight": "seccion-compacta",
+  "section-heading": "encabezado-seccion",
+  grid: "rejilla",
+  "grid-2": "rejilla-dos",
+  "grid-3": "rejilla-tres",
+  "grid-4": "rejilla-cuatro",
+  card: "tarjeta",
+  "card-body": "contenido-tarjeta",
+  icon: "icono",
+  button: "boton",
+  "button-light": "boton-claro",
+  "button-outline": "boton-contorno",
+  actions: "grupo-acciones",
+  banner: "franja-destacada",
+  "sidebar-layout": "distribucion-lateral",
+  sidebar: "barra-lateral",
+  prose: "texto-editorial",
+  "table-wrap": "contenedor-tabla",
+  "form-card": "tarjeta-formulario",
+  "form-grid": "rejilla-formulario",
+  field: "campo-formulario",
+  "field-full": "campo-completo",
+  checkline: "fila-casilla",
+  notice: "aviso",
+  quote: "cita",
+  "media-frame": "marco-multimedia",
+  "media-player": "reproductor-multimedia",
+  "site-footer": "pie-sitio",
+  "footer-grid": "rejilla-pie",
+  "footer-bottom": "pie-inferior",
+  "social-links": "enlaces-sociales",
+  "course-note": "nota-curso",
+  badge: "insignia",
+  price: "precio",
+  "story-image": "imagen-oficio",
+  "decorative-rule": "linea-decorativa",
+  muted: "texto-secundario",
+  "craft-link": "enlace-oficio",
+  "tw-card": "tarjeta-utilitaria",
+  "tw-pill": "etiqueta-utilitaria",
+  "tw-reveal": "animacion-aparicion",
+  "tw-responsive-grid": "rejilla-adaptable"
+};
+
 function card([src, alt, title, text, href]) {
   return `<article class="card tarjeta-artesanal">${image(src, alt)}<div class="card-body"><span class="badge">${title}</span><h3>${title}</h3><p>${text}</p><a class="craft-link" href="${href}">Explorar oficio <span aria-hidden="true">→</span></a></div></article>`;
 }
 
 function formField(label, name, type = "text", required = true, full = false) {
-  const cls = full ? "field field-full" : "field";
+  const cls = full ? "campo-formulario campo-completo" : "campo-formulario";
   const req = required ? " required" : "";
   const autocomplete = ({ email: "email", tel: "tel", text: "name" })[type];
   if (type === "textarea") return `<div class="${cls}"><label for="${name}">${label}${required ? " *" : ""}</label><textarea id="${name}" name="${name}"${req}></textarea></div>`;
@@ -112,6 +169,13 @@ for (const page of pages) {
   const withDemoForm = content.replaceAll(' action="#" method="get"', ' method="post" data-demo-form')
     .replaceAll('class="card tarjeta-artesanal"', 'class="card tarjeta-artesanal tw-reveal"')
     .replaceAll('class="grid grid-3"', 'class="grid tw-responsive-grid"');
-  await writeFile(page.file, withDemoForm);
+  const htmlWithSpanishClasses = withDemoForm.replace(/class="([^"]+)"/g, (_attribute, classes) => {
+    const translatedClasses = classes
+      .split(/\s+/)
+      .map((className) => nombresDeClases[className] ?? className)
+      .join(" ");
+    return `class="${translatedClasses}"`;
+  });
+  await writeFile(page.file, htmlWithSpanishClasses);
 }
 console.log(`Generated ${pages.length} semantic HTML pages.`);

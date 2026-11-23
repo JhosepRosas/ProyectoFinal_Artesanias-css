@@ -1,9 +1,9 @@
-for (const form of document.querySelectorAll("form.form-card")) {
+for (const form of document.querySelectorAll("form.tarjeta-formulario")) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const status = form.querySelector(".form-status") ?? document.createElement("p");
+    const status = form.querySelector(".estado-formulario") ?? document.createElement("p");
     if (!status.isConnected) {
-      status.className = "form-status muted";
+      status.className = "estado-formulario texto-secundario";
       status.setAttribute("role", "status");
       status.setAttribute("aria-live", "polite");
       form.append(status);

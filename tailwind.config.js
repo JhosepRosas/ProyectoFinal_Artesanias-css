@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         misti: "#a84d35",
-        "andes-ink": "#29271f",
-        "warm-paper": "#f8f4ec"
+        "tinta-andina": "#29271f",
+        "papel-calido": "#f8f4ec"
       }
     }
   },
