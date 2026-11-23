@@ -7,7 +7,13 @@
   color: #66745a;
 }
 .marca-ceramica {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 0.55rem;
   color: #793724;
@@ -17,15 +23,28 @@
   content: "";
   width: 0.72rem;
   height: 0.72rem;
+  -webkit-border-radius: 50% 50% 45% 45%;
+  -moz-border-radius: 50% 50% 45% 45%;
   border-radius: 50% 50% 45% 45%;
   background: #a84d35;
+  -webkit-box-shadow: 0.48rem 0.08rem 0 -2px #d6a64f;
+  -moz-box-shadow: 0.48rem 0.08rem 0 -2px #d6a64f;
   box-shadow: 0.48rem 0.08rem 0 -2px #d6a64f;
 }
 .tarjeta-artesanal {
+  -webkit-transition: -webkit-box-shadow 0.22s ease, -webkit-transform 0.22s ease;
+  -moz-transition: -moz-box-shadow 0.22s ease, -moz-transform 0.22s ease;
+  -o-transition: box-shadow 0.22s ease, -o-transform 0.22s ease;
   transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 .tarjeta-artesanal:hover {
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
   transform: translateY(-4px);
+  -webkit-box-shadow: 0 16px 32px rgba(41, 39, 31, 0.15);
+  -moz-box-shadow: 0 16px 32px rgba(41, 39, 31, 0.15);
   box-shadow: 0 16px 32px rgba(41, 39, 31, 0.15);
 }
 .tarjeta-artesanal .insignia {
@@ -48,11 +67,17 @@
   position: absolute;
   left: -0.05rem;
   top: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   display: grid;
   place-items: center;
   width: 2.5rem;
   height: 2.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   color: white;
   background: #a84d35;
@@ -65,7 +90,11 @@
   padding: 1.35rem;
   background: #fbf8f3;
   border: 1px solid #eee5d2;
+  -webkit-border-radius: 1.15rem;
+  -moz-border-radius: 1.15rem;
   border-radius: 1.15rem;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(41, 39, 31, 0.05);
+  -moz-box-shadow: 0 0.5rem 1.5rem rgba(41, 39, 31, 0.05);
   box-shadow: 0 0.5rem 1.5rem rgba(41, 39, 31, 0.05);
 }
 .testimonio cite {

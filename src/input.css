@@ -10,18 +10,52 @@
 @layer components {
   .tarjeta-utilitaria {
     @apply rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] hover:shadow-lg;
+    -webkit-transition: -webkit-transform .3s ease-out, -webkit-box-shadow .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out, -moz-box-shadow .3s ease-out;
+    -o-transition: transform .3s ease-out, box-shadow .3s ease-out;
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+  }
+  .tarjeta-utilitaria:hover {
+    -webkit-transform: translateY(-.25rem) scale(1.01);
+    -moz-transform: translateY(-.25rem) scale(1.01);
+    -ms-transform: translateY(-.25rem) scale(1.01);
+    -o-transform: translateY(-.25rem) scale(1.01);
+    transform: translateY(-.25rem) scale(1.01);
   }
   .etiqueta-utilitaria {
     @apply inline-flex items-center rounded-full bg-orange-100 px-3 py-1 text-sm font-semibold text-orange-900 transition duration-200 ease-in-out hover:scale-105;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -moz-transition: -moz-transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+  .etiqueta-utilitaria:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 
+@-webkit-keyframes aparicion-suave {
+  from { opacity: 0; -webkit-transform: translateY(12px); transform: translateY(12px); }
+  to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+@-moz-keyframes aparicion-suave {
+  from { opacity: 0; -moz-transform: translateY(12px); transform: translateY(12px); }
+  to { opacity: 1; -moz-transform: translateY(0); transform: translateY(0); }
+}
+@-o-keyframes aparicion-suave {
+  from { opacity: 0; -o-transform: translateY(12px); transform: translateY(12px); }
+  to { opacity: 1; -o-transform: translateY(0); transform: translateY(0); }
+}
 @keyframes aparicion-suave {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.animacion-aparicion { animation: aparicion-suave .65s ease-out both; }
+.animacion-aparicion { -webkit-animation: aparicion-suave .65s ease-out both; -moz-animation: aparicion-suave .65s ease-out both; -o-animation: aparicion-suave .65s ease-out both; animation: aparicion-suave .65s ease-out both; }
 
 @media (min-width: 768px) {
   .rejilla-adaptable { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }

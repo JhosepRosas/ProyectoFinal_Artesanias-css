@@ -19,6 +19,8 @@ Los nombres de las variables propias en CSS, LESS y SCSS están en español para
 
 Node.js 18 o posterior y npm. La tipografía se carga desde Google Fonts; el resto de la interfaz, las ilustraciones y el audio/video de muestra son locales. Los mapas requieren conexión a internet.
 
+Las hojas fuente incluyen prefijos de compatibilidad escritos directamente (`-webkit-`, `-moz-`, `-ms-` y `-o-`) junto a la declaración estándar en CSS, LESS, SCSS y Tailwind; no se usa un paso independiente de npm para agregarlos. El compilador de Tailwind puede normalizar o descartar prefijos que considera innecesarios en el CSS generado. Se agregan respaldos para propiedades como Flexbox, transformaciones, transiciones, animación y `object-fit`; CSS Grid y las propiedades personalizadas requieren versiones actuales de los navegadores. Se recomienda probar el sitio en versiones actuales de Mozilla Firefox, Safari, Chrome, Microsoft Edge y Opera; no se garantiza soporte para versiones antiguas o ya discontinuadas.
+
 ## Comandos
 
 ```bash

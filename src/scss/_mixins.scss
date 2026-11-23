@@ -6,6 +6,8 @@
   padding: $relleno;
   background: $fondo;
   border: 1px solid color.adjust(paleta.$color-papel, $lightness: -8%);
+  -webkit-border-radius: paleta.$radio-borde;
+  -moz-border-radius: paleta.$radio-borde;
   border-radius: paleta.$radio-borde;
 }
 

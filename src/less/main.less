@@ -15,7 +15,13 @@
 }
 
 .marca-ceramica {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: .55rem;
   color: @color-arcilla-oscura;
@@ -24,16 +30,29 @@
     content: "";
     width: .72rem;
     height: .72rem;
+    -webkit-border-radius: 50% 50% 45% 45%;
+    -moz-border-radius: 50% 50% 45% 45%;
     border-radius: 50% 50% 45% 45%;
     background: @color-arcilla;
+    -webkit-box-shadow: .48rem .08rem 0 -2px @color-sol;
+    -moz-box-shadow: .48rem .08rem 0 -2px @color-sol;
     box-shadow: .48rem .08rem 0 -2px @color-sol;
   }
 }
 
 .tarjeta-artesanal {
+  -webkit-transition: -webkit-box-shadow .22s ease, -webkit-transform .22s ease;
+  -moz-transition: -moz-box-shadow .22s ease, -moz-transform .22s ease;
+  -o-transition: box-shadow .22s ease, -o-transform .22s ease;
   transition: box-shadow .22s ease, transform .22s ease;
   &:hover {
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
     transform: translateY(-4px);
+    -webkit-box-shadow: 0 16px 32px fade(@color-tinta, 15%);
+    -moz-box-shadow: 0 16px 32px fade(@color-tinta, 15%);
     box-shadow: 0 16px 32px fade(@color-tinta, 15%);
   }
   .insignia { background: mix(@color-papel, @color-sol, 70%); }
@@ -54,11 +73,17 @@
       position: absolute;
       left: -.05rem;
       top: 0;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
       transform: translateX(-50%);
       display: grid;
       place-items: center;
       width: 2.5rem;
       height: 2.5rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
       border-radius: 50%;
       color: white;
       background: @color-arcilla;
@@ -72,7 +97,11 @@
   padding: 1.35rem;
   background: lighten(@color-papel, 2%);
   border: 1px solid darken(@color-papel, 7%);
+  -webkit-border-radius: @radio-borde;
+  -moz-border-radius: @radio-borde;
   border-radius: @radio-borde;
+  -webkit-box-shadow: 0 .5rem 1.5rem fade(@color-tinta, 5%);
+  -moz-box-shadow: 0 .5rem 1.5rem fade(@color-tinta, 5%);
   box-shadow: 0 .5rem 1.5rem fade(@color-tinta, 5%);
   cite { color: @color-arcilla-oscura; font-style: normal; font-weight: 700; }
 }
